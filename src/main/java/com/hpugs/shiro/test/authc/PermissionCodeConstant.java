@@ -27,6 +27,8 @@ public interface PermissionCodeConstant {
         /****************用户管理******************/
         // 删除用户
         String DEL_USER = "del_user";
+        // 编辑用户
+        String EDIT_USER = "edit_user";
 
     }
 }

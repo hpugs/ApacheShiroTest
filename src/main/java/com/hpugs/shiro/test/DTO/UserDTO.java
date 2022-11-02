@@ -8,6 +8,8 @@ import java.util.List;
 @Data
 public class UserDTO implements Serializable {
 
+    private Long id;
+
     private String account;
 
     private String password;

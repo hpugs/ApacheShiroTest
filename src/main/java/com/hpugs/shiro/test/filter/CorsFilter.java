@@ -27,7 +27,7 @@ public class CorsFilter implements Filter {
         response.addHeader("Access-Control-Allow-Origin", request.getHeader("Origin"));
         response.addHeader("Access-Control-Allow-Credentials", "true");
         response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-        response.addHeader("Access-Control-Allow-Headers", "Content-Type, Access-Control-Expose-Headers, JSESSIONID, http-user-agent");
+        response.addHeader("Access-Control-Allow-Headers", "Content-Type, Access-Control-Expose-Headers, authToken, http-user-agent");
         response.addHeader("Access-Control-Expose-Headers", "JSESSIONID");
         response.addHeader("Access-Control-Max-Age", "1800");//30 min
         chain.doFilter(req, res);
