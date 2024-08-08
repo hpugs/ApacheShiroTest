@@ -25,11 +25,11 @@ public class TestCredentialsMatcher implements CredentialsMatcher {
         UsernamePasswordToken token = (UsernamePasswordToken) authenticationToken;
         String username = token.getUsername();
         String password = String.copyValueOf(token.getPassword());
-        
+
         // 账户信息
         SimpleAuthenticationInfo info = (SimpleAuthenticationInfo) authenticationInfo;
         UserDTO userDTO = (UserDTO) info.getPrincipals().getPrimaryPrincipal();
-        if(userDTO.getPassword().equals(password)){
+        if (userDTO.getPassword().equals(password)) {
             return true;
         }
         return false;

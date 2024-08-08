@@ -20,7 +20,7 @@ public class TestSessionFilter extends UserFilter {
     protected boolean onAccessDenied(ServletRequest req, ServletResponse res) throws Exception {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
-        if ("OPTIONS".equals(request.getMethod())){
+        if ("OPTIONS".equals(request.getMethod())) {
             return true;
         }
 

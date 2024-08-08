@@ -140,7 +140,7 @@ public class ShiroConfiguration {
     }
 
     @Bean
-    public TestCredentialsMatcher testCredentialsMatcher(){
+    public TestCredentialsMatcher testCredentialsMatcher() {
         return new TestCredentialsMatcher();
     }
 
@@ -151,7 +151,7 @@ public class ShiroConfiguration {
      * 需要配合AuthorizationAttributeSourceAdvisor一起使用，否则权限注解无效。
      */
     @Bean
-    public static DefaultAdvisorAutoProxyCreator getDefaultAdvisorAutoProxyCreator(){
+    public static DefaultAdvisorAutoProxyCreator getDefaultAdvisorAutoProxyCreator() {
         return new DefaultAdvisorAutoProxyCreator();
     }
 
