@@ -79,6 +79,7 @@ public class UserController {
     }
 
     @RequiresPermissions(
+            // 通过注解配置权限检查
             value = {DEL_USER}
     )
     @GetMapping("/delUser")
@@ -89,6 +90,7 @@ public class UserController {
     @GetMapping("/editUser")
     public Result editUser() {
         Subject subject = SecurityUtils.getSubject();
+        // 通过显示配置权限检查
         subject.checkPermission(EDIT_USER);
         return Result.buildSuccess();
     }

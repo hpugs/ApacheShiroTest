@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 /**
+ * 自定义身份认证 realm;
  * @author xinge
  */
 @Slf4j

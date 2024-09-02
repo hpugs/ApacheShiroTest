@@ -11,8 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author rugen
- * 2021 - 11 - 09
+ * 拒绝访问处理
  */
 public class TestSessionFilter extends UserFilter {
 

@@ -24,8 +24,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * @author rugen
- * 2021 - 11 - 09
+ * shiro权限配置
  */
 @Configuration
 public class ShiroConfiguration {

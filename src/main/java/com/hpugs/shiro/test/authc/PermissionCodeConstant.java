@@ -1,8 +1,6 @@
 package com.hpugs.shiro.test.authc;
 
 /**
- * @author rugen
- * 2022 - 01 - 04
  * 权限常量
  */
 public interface PermissionCodeConstant {
